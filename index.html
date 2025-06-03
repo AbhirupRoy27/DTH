@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTH Web Application</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Mobile Sidebar Navigation -->
+    <div class="mobile-sidebar" id="mobile-sidebar">
+        <div class="sidebar-header">
+            <h2>Dish Bro</h2>
+            <button class="close-sidebar" id="close-sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="sidebar-dropdown">
+                    <a href="#" class="sidebar-dropdown-toggle">Book Connection <i class="fas fa-caret-down"></i></a>
+                    <ul class="sidebar-dropdown-content">
+                        <li><a href="#">New Connection</a></li>
+                        <li><a href="#">Upgrade Connection</a></li>
+                        <li><a href="#">Connection Status</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a href="#" class="sidebar-dropdown-toggle">DTH Plans <i class="fas fa-caret-down"></i></a>
+                    <ul class="sidebar-dropdown-content">
+                        <li><a href="#">Basic Plans</a></li>
+                        <li><a href="#">Premium Plans</a></li>
+                        <li><a href="#">Special Offers</a></li>
+                    </ul>
+                </li>
+                <li class="sidebar-dropdown">
+                    <a href="#" class="sidebar-dropdown-toggle">Wifi Plans <i class="fas fa-caret-down"></i></a>
+                    <ul class="sidebar-dropdown-content">
+                        <li><a href="#">One Month Wifi</a></li>
+                        <li><a href="#">Six Month Wifi</a></li>
+                        <li><a href="#">Year Wifi Plan</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Overlay for sidebar -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    
+    <!-- Header Container -->
+    <header id="main-header" class="header-container">
+        <div class="logo-nav-container">
+            <!-- Mobile menu toggle button -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <div class="logo">
+                <h1>Dish Bro</h1>
+            </div>
+            <nav class="nav-menu desktop-only">
+                <ul class="dropdown-menu">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Book Connection <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">New Connection</a></li>
+                            <li><a href="#">Upgrade Connection</a></li>
+                            <li><a href="#">Connection Status</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">DTH Plans <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">Basic Plans</a></li>
+                            <li><a href="#">Premium Plans</a></li>
+                            <li><a href="#">Special Offers</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Wifi Plans <i class="fas fa-caret-down"></i></a>
+                        <ul class="dropdown-content">
+                            <li><a href="#">One Month Wifi</a></li>
+                            <li><a href="#">Six Month Wifi</a></li>
+                            <li><a href="#">Year Wifi Plan</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="user-actions">
+            <button class="btn login-btn">Login</button>
+            <button class="btn register-btn">Register</button>
+            <div class="user-profile">
+                <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main id="main-content" class="main-container">
+        <section class="hero-section">
+            <h2>Welcome to DTH Application</h2>
+            <p>Your comprehensive web solution</p>
+        </section>
+        
+        <!-- Latest Offers Banner -->
+        <section class="offers-banner">
+            <div class="container">
+                <h2>Latest Offers are JioHotstar, SonyLIV and Netflix <a href="#299-plan" class="highlight-link">@299/-</a>only</h2>
+            </div>
+        </section>
+        
+        <!-- Popular Plans Section -->
+        <section class="plans-section">
+            <div class="container">
+                <h2 class="section-title">Popular Plans</h2>
+                <div class="plans-container">
+                    <!-- SD Plan -->
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h3 class="plan-type">SD</h3>
+                            <div class="plan-price">199<span class="price-period">/month</span></div>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li>Unlimited 5G Data</li>
+                                <li>Limited Entertainment</li>
+                                <li>No OTT Apps</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="cta-button">Choose Plan</a>
+                    </div>
+                    
+                    <!-- HD Plan -->
+                    <div class="plan-card">
+                        <div class="recommended-badge">Best Value</div>
+                        <div class="plan-header">
+                            <h3 class="plan-type">HD</h3>
+                            <div class="plan-price">399<span class="price-period">/month</span></div>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li>Unlimited 5G Data</li>
+                                <li>Unlimited HD Content</li>
+                                <li>Unlimited Entertainment</li>
+                                <li>6 OTT Apps</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="cta-button">Choose Plan</a>
+                    </div>
+                    
+                    <!-- 4K Plan -->
+                    <div class="plan-card">
+                        <div class="plan-header">
+                            <h3 class="plan-type">4K</h3>
+                            <div class="plan-price">699<span class="price-period">/month</span></div>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li>Unlimited 5G Data</li>
+                                <li>Unlimited 4k Content</li>
+                                <li>Unlimited Entertainment</li>
+                                <li>24 hr Customer Care</li>
+                                <li>12 OTT Apps</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="cta-button">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Curated Offerings Section -->
+        <section class="curated-offerings-section">
+            <div class="container">
+                <div class="offerings-content">
+                    <div class="offerings-text">
+                        <h2>Choose from Curated <span class="highlight">Offerings</span></h2>
+                        <div class="offerings-options">
+                            <div class="offering-expandable">
+                                <div class="offering-header">
+                                    <span class="offering-title">ADD/DELETE CHANNELS</span>
+                                    <span class="offering-icon">+</span>
+                                </div>
+                                <div class="offering-content">
+                                    <p>Customize your channel lineup by adding or removing channels based on your preferences. Choose from a wide variety of entertainment, sports, news, and premium channels.</p>
+                                    <a href="#" class="offering-action">Manage Channels</a>
+                                </div>
+                            </div>
+                            
+                            <div class="offering-expandable">
+                                <div class="offering-header">
+                                    <span class="offering-title">RECOMMEND A PACK</span>
+                                    <span class="offering-icon">+</span>
+                                </div>
+                                <div class="offering-content">
+                                    <p>Get personalized pack recommendations based on your viewing habits and preferences. Our smart system suggests the perfect channel combinations for you.</p>
+                                    <a href="#" class="offering-action">Get Recommendations</a>
+                                </div>
+                            </div>
+                            
+                            <div class="offering-expandable">
+                                <div class="offering-header">
+                                    <span class="offering-title">EXPLORE ALL PACKS</span>
+                                    <span class="offering-icon">+</span>
+                                </div>
+                                <div class="offering-content">
+                                    <p>Browse our complete collection of channel packs including entertainment, sports, movies, kids, and regional options. Find the perfect combination for your household.</p>
+                                    <a href="#" class="offering-action">View All Packs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tv-graphic">
+                        <!-- TV shape graphic -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Account Management Section -->
+        <section class="account-section">
+            <div class="container">
+                <div class="account-content">
+                <div class="account-text">
+                    <h2>Manage your <span class="highlight">account</span> with ease</h2>
+                    <p>Access your subscription details, update payment information, and manage your viewing preferences all in one place.</p>
+                    <div class="account-buttons">
+                        <a href="#" class="btn btn-light">Sign in</a>
+                        <a href="#" class="btn btn-dark">Register</a>
+                    </div>
+                </div>
+                <div class="account-graphic">
+                    <div class="phone-container">
+                        <img src="Login.png" alt="Mobile app login screen" class="phone-image">
+                    </div>
+                <div class="account-number">02</div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <!-- Placeholder for future sub-sections with interactive information -->
+        <section class="content-section">
+            <div class="container">
+                <h3>Main Content Area</h3>
+                <p>This section will contain sub-sections with interactive information.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Container -->
+    <footer id="main-footer" class="footer-container">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h4>About Us</h4>
+                <p>DTH App provides innovative solutions for modern web applications.</p>
+            </div>
+            <div class="footer-section contact">
+                <h4>Contact Us</h4>
+                <p><i class="fas fa-envelope"></i> contact@dthapp.com</p>
+                <p><i class="fas fa-phone"></i> 7719528124</p>
+            </div>
+            <div class="footer-section links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 DTH Bro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
