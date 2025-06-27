@@ -442,7 +442,7 @@ ul {
     display: block;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 815px) {
     .desktop-only {
         display: none !important;
     }
@@ -1258,14 +1258,24 @@ ul {
 
 
 .btn-light {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #f5f5f5;
     color: #333;
     border: 1px solid #ddd;
+    height: 3.5rem;
+    width: 6.5rem;
 }
 
 .btn-dark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #333;
     color: white;
+    height: 3.5rem;
+    width: 7.5rem;
 }
 
 .btn:hover {
@@ -1338,7 +1348,9 @@ ul {
     .account-number {
         font-size: 8rem;
     }
+}
 
+@media (max-width: 768px) {
     .basic {
         display: none;
     }
