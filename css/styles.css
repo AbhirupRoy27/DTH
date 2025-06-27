@@ -32,7 +32,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1rem;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -74,12 +74,16 @@ ul {
 }
 
 .btn {
+    display: inline-block;
     padding: 0.5rem 1rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 50px;
+    font-weight: 600;
     cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    text-align: center;
 }
 
 .login-btn {
@@ -114,7 +118,7 @@ ul {
 /* Main Content Styles */
 .main-container {
     min-height: calc(100vh - 200px); /* Adjust based on header and footer height */
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
 }
 
 .hero-section {
@@ -198,8 +202,9 @@ ul {
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .header-container {
-        flex-direction: column;
-        padding: 1rem;
+        flex-direction: row;
+        padding: 0.4rem;
+        justify-content: start;
     }
     
     .logo-nav-container {
@@ -447,9 +452,8 @@ ul {
     }
     
     .header-container {
-        flex-direction: row;
         flex-wrap: wrap;
-        padding: 1rem 1.2rem;
+        /* padding: 1rem 1.2rem; */
         align-items: center;
     }
     
@@ -497,29 +501,17 @@ ul {
 
 /* Mobile Phones (6-7 inch) */
 @media screen and (min-width: 480px) and (max-width: 767px) {
-    .header-container {
-        padding: 0.7rem;
-    }
-    
     .btn {
-        padding: 0.4rem 0.7rem;
-        font-size: 0.85rem;
+        padding: 0.2rem 0.35rem;
+        font-size: 0.45rem;
     }
 }
 
 /* Small Phones (5-5.5 inch) */
 @media screen and (max-width: 479px) {
-    .header-container {
-        padding: 0.6rem;
-    }
     
     .logo h1 {
         font-size: 1.1rem;
-    }
-    
-    .btn {
-        padding: 0.3rem 0.6rem;
-        font-size: 0.8rem;
     }
     
     .user-profile i {
@@ -531,24 +523,12 @@ ul {
 .offers-banner {
     background: linear-gradient(135deg, #001a57 0%, #003399 100%);
     color: white;
-    padding: 1.5rem 0;
+    padding: 0.8rem 0;
     text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     position: relative;
     overflow: hidden;
-    margin-bottom: 0;
-}
-
-.offers-banner::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: rgba(255, 255, 255, 0.1);
-    transform: rotate(30deg);
-    pointer-events: none;
+    margin-bottom: 0.2rem;
 }
 
 .offers-banner .container {
@@ -570,7 +550,6 @@ ul {
     display: inline-block;
     color: #fff;
     font-weight: bold;
-    padding: 0.3rem 0.8rem;
     margin: 0 0.5rem;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -585,9 +564,9 @@ ul {
     .offers-banner h2 {
         font-size: 1.2rem;
     }
-    
-    .highlight-link {
-        margin: 0.3rem 0.5rem;
+    .fit-text h2{
+        display: inline;
+        object-fit: contain;
     }
 }
 
@@ -1276,15 +1255,7 @@ ul {
     gap: 1rem;
 }
 
-.btn {
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    border-radius: 50px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    text-align: center;
-}
+
 
 .btn-light {
     background-color: #f5f5f5;
@@ -1366,5 +1337,9 @@ ul {
     
     .account-number {
         font-size: 8rem;
+    }
+
+    .basic {
+        display: none;
     }
 }

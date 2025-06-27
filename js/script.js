@@ -6,10 +6,8 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', function() {
         if (window.scrollY > 50) {
             header.style.boxShadow = '0 4px 10px rgba(0, 0, 0, 0.1)';
-            header.style.padding = '0.7rem 2rem';
         } else {
             header.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.1)';
-            header.style.padding = '1rem 2rem';
         }
     });
     
@@ -220,3 +218,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+removeBasicPlans = () => {
+    const basic = document.querySelectorAll(basic);
+}
