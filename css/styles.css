@@ -499,13 +499,13 @@ ul {
     }
 }
 
-/* Mobile Phones (6-7 inch) */
+/* Mobile Phones (6-7 inch)
 @media screen and (min-width: 480px) and (max-width: 767px) {
     .btn {
         padding: 0.2rem 0.35rem;
         font-size: 0.45rem;
     }
-}
+} */
 
 /* Small Phones (5-5.5 inch) */
 @media screen and (max-width: 479px) {
